@@ -72,7 +72,7 @@ async def start(client, message):
             ]
         ]
 
-        if message.command[1] != "subscribe":
+        if message.command[1] != "MAIN CHANNEL":
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
@@ -245,7 +245,6 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton(text="Main Channel", url="https://t.me/mallu_moviz1")]])
-        )
         protect_content=True if pre == 'filep' else False,
         )
                     
