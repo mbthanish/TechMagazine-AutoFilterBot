@@ -666,13 +666,6 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
-    
-             btn.insert(0, 
-             [
-                 InlineKeyboardButton(f'😇 Info', 'tips'),
-                 InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
-            ])
-            
                       
     btn.insert(0, [
         InlineKeyboardButton(f'🎬 {search} 🎬', 'rkbtn')
