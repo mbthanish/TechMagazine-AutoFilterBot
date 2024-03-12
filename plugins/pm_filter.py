@@ -110,7 +110,7 @@ async def next_page(bot, query):
     btn.insert(0, [
         InlineKeyboardButton(f'🎬 {search} 🎬', 'rkbtn')
     ])
-    btn.insert(2, [
+    btn.insert(1, [
         InlineKeyboardButton("📺 🄼🄰🄸🄽 🄲🄷🄰🄽🄽🄴🄻 📺", url=f"https://t.me/mallu_moviz1")
     ])    
     try:
@@ -670,7 +670,7 @@ async def auto_filter(client, msg, spoll=False):
     btn.insert(0, [
         InlineKeyboardButton(f'🎬 {search} 🎬', 'rkbtn')
     ])
-    btn.insert(2, [
+    btn.insert(1, [
         InlineKeyboardButton("📺 🄼🄰🄸🄽 🄲🄷🄰🄽🄽🄴🄻 📺", url=f"https://t.me/mallu_moviz1")
     ])
 
