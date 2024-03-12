@@ -107,6 +107,12 @@ async def next_page(bot, query):
                 InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
+    btn.insert(0, [
+        InlineKeyboardButton(f'🎬 {search} 🎬', 'rkbtn')
+    ])
+    btn.insert(2, [
+        InlineKeyboardButton("📺 🄼🄰🄸🄽 🄲🄷🄰🄽🄽🄴🄻 📺", url=f"https://t.me/mallu_moviz1")
+    ])    
     try:
         await query.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(btn)
