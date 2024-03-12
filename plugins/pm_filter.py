@@ -647,7 +647,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"[🔖{get_size(file.file_size)}]🔮{file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -666,6 +666,20 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
+         else:
+            btn.insert(0, 
+            [
+                InlineKeyboardButton(f'😇 Info', 'tips'),
+                InlineKeyboardButton(f'📝 𝖳𝗂𝗉𝗌', 'info')
+            ])
+            
+                      
+    btn.insert(0, [
+        InlineKeyboardButton(f'🎬 {search} 🎬', 'rkbtn')
+    ])
+    btn.insert(2, [
+        InlineKeyboardButton("📺 🄼🄰🄸🄽 🄲🄷🄰🄽🄽🄴🄻 📺", url=f"https://t.me/mallu_moviz1")
+    ])
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
