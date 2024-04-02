@@ -675,7 +675,7 @@ async def auto_filter(client, msg, spoll=False):
     ],
                    [
         InlineKeyboardButton('📽 𝐎𝐓𝐓 𝐌𝐎𝐕𝐈𝐄𝐒 📽', 'https://t.me/+DFXw1-2my71hNTc1'),
-        inlinekeyboardbutton('🖥 𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🖥', 'https://t.me/+1Zm5sYJIUpwyZWFl')
+        Inlinekeyboardbutton('🖥 𝐎𝐓𝐓 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 🖥', 'https://t.me/+1Zm5sYJIUpwyZWFl')
     ]])
         
     if offset != "":
